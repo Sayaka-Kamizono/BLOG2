@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新規作成</title>
+</head>
+
+<style>
+
+  html {
+    /* background-image: url(足跡.png); */
+   /* background-repeat: no-repeat;
+   background-position: center;*/
+   background-color: darkgray;
+   background-image: url(犬と猫.png);
+   background-position: right bottom;
+   background-repeat:  no-repeat;
+   background-size:600px auto;
+  }
+
+
+  body {
+    width: 400px;
+    height: 600px;
+    margin: auto;
+   
+  }
+
+  a {
+    color: white;
+  }
+
+  form{
+    width: 300px;
+    height: 410px;
+    margin: 200px auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    /* background: rgba(180, 180, 180, 0.8); */
+    color: white;
+  }
+</style>
+
+<body>
+    
+    <form action="select.php" method="POST">
+        <p>タイトル<input type="text" name="title"></p>
+        
+        <p>本文        </p>
+        <textarea name="text" id="text" cols="30" rows="10"></textarea>
+        <br>
+        <p>カテゴリー<select name="category">
+          <option value="1">活動報告</option>
+          <option value="2">寄付状況</option>
+      </select></p>
+        
+        <!-- <br> -->
+        <input type="radio" name="private_key" value="1" checked>公開
+        <input type="radio" name="private_key" value="2">非公開
+        <br>
+        <br>
+        <input type="submit" value="投稿する">
+    </form>
+
+
+    
+</body>
+</html>
